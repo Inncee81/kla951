@@ -1,0 +1,38 @@
+<!--
+	For rules that are on by default, see Conde-Nast.xml.
+
+-->
+<ruleset name="Condé Nast (mismatches)" default_off="expired, mismatch, self-signed">
+
+	<target host="thumbnailer.thestudio.condenast.com" />
+	<!--
+		Expired.
+				-->
+	<target host="designcentersearch.com" />
+	<target host="www.designcentersearch.com" />
+	<target host="blog.details.com" />
+	<target host="golfdigestschool.com" />
+	<target host="www.golfdigestschool.com" />
+	<target host="vf.com" />
+	<target host="www.vf.com" />
+
+
+	<securecookie host="^designcentersearch\.com$" name=".+" />
+
+	<!--	Akamai.
+				-->
+	<rule from="^http://thumbnailer\.thestudio\.condenast\.com/"
+		to="https://thumbnailer.thestudio.condenast.com/" />
+
+	<rule from="^http://(?:www\.)?designcentersearch\.com/"
+		to="https://designcentersearch.com/" />
+
+	<rule from="^http://blog\.details\.com/"
+		to="https://blog.details.com/" />
+
+	<rule from="^http://(?:www\.)?golfdigestschool\.com/"
+		to="https://www.golfdigestschool.com/" />
+
+	<rule from="^http:" to="https:" />
+
+</ruleset>

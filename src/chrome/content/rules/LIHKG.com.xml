@@ -1,0 +1,11 @@
+<ruleset name="LIHKG.com">
+	<target host="lihkg.com" />
+	<target host="www.lihkg.com" />
+	<target host="amp.lihkg.com" />
+	<target host="game.lihkg.com" />
+	<target host="x.lihkg.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>
