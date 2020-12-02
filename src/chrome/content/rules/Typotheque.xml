@@ -1,0 +1,16 @@
+<!--
+	Other Typotheque rulesets:
+
+		+ TPTQ-Arabic.com.xml
+		+ Works_That_Work.com.xml
+-->
+<ruleset name="Typotheque.com (partial)">
+	<target host="typotheque.com" />
+	<target host="www.typotheque.com" />
+	<target host="fonts.typotheque.com" />
+	<target host="wf.typotheque.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

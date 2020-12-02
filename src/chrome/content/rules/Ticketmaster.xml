@@ -1,0 +1,44 @@
+<!--
+	For other Live Nation coverage, see 
+		+ LiveNation.com.xml
+
+	Other ticketmaster rulesets:
+		+ BilletNet.dk.xml
+		+ ETicketing.co.uk.xml
+		+ Ticketmaster.ae.xml
+		+ Ticketmaster.at.xml
+		+ Ticketmaster.be.xml
+		+ Ticketmaster.ch.xml
+		+ Ticketmaster.co.nz.xml
+		+ Ticketmaster.co.uk.xml
+		+ Ticketmaster.com.au.xml
+		+ Ticketmaster.com.mx.xml
+		+ Ticketmaster.cz.xml
+		+ Ticketmaster.de.xml
+		+ Ticketmaster.dk.xml
+		+ Ticketmaster.es.xml
+		+ Ticketmaster.eu.xml
+		+ Ticketmaster.fi.xml
+		+ Ticketmaster.fr.xml
+		+ Ticketmaster.gr.xml
+		+ Ticketmaster.ie.xml
+		+ Ticketmaster.it.xml
+		+ Ticketmaster.nl.xml
+		+ Ticketmaster.no.xml
+		+ Ticketmaster.pl.xml
+		+ Ticketmaster.se.xml
+
+-->
+<ruleset name="Ticketmaster.com (partial)">
+	<target host="ticketmaster.com" />
+	<target host="media.ticketmaster.com" />
+	<test url="http://media.ticketmaster.com/en-au/img/static/pdf/AIDA_guide.pdf" />
+	<test url="http://media.ticketmaster.com/en-au/img/static/pdf/WA_SchoolsList_2016.pdf" />
+	<test url="http://media.ticketmaster.com/en-nz/img/static/pdf/tmnz_aga_pds.pdf" />
+	<target host="ticketsnow.ticketmaster.com" />
+	<target host="www.ticketmaster.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

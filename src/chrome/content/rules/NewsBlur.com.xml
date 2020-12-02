@@ -1,0 +1,19 @@
+<!--
+	Non-functional hosts
+		SSL peer certificate was not OK:
+		- popular.global.newsblur.com
+		- icons.newsblur.com
+		- pages.newsblur.com
+-->
+<ruleset name="NewsBlur.com">
+	<target host="newsblur.com" />
+	<target host="www.newsblur.com" />
+	<target host="blog.newsblur.com" />
+	<target host="global.newsblur.com" />
+	<target host="homepage.newsblur.com" />
+	<target host="macdrifter.newsblur.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

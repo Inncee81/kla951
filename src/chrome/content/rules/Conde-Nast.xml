@@ -1,0 +1,59 @@
+<!--
+	For problematic rules, see Conde-Nast-mismatches.xml.
+
+
+	Other Condé Nast rulesets:
+
+		- ArsTechnica.co.uk.xml
+		- ArsTechnica.com.xml
+		- ArsTechnica.net.xml
+		- Conde_Nast.co.uk.xml
+		- Conde_Nast_Digital.com.xml
+		- Conde_Nast_Traveler.xml
+		- Conde_Nast_store.com.xml
+		- Condenet.com.xml
+		- Details.xml
+		- GQ-magazine.co.uk.xml
+		- GQ.xml
+		- Golf_Digest.xml
+		- Style.com.xml
+		- The-New-Yorker.xml
+		- Vanity-Fair.xml
+		- Wired.com.xml
+		- wired.co.uk.xml
+
+
+	webmonkey.com is hosted on Akamai.
+
+
+	CDN buckets:
+
+		- fonts.condenast.com.edgekey.net
+		- thumbnailer.thestudio.condenast.com.edgesuite.net
+		- www.condenast.com.edgekey.net
+		- www.webmonkey.com.edgesuite.net
+
+
+	Nonfunctional:
+
+
+		- architecturaldigest.com:
+			- /
+			- www				(Akamai; blank page)
+		- arst.ch				(cert: api.arstechnica.net; shows that domain's data)
+		- images1.designcentersearch.com	(times out; data aren't on www)
+		- (www.)shopad.net			(cert: designcentersearch.com; shows that domain's data)
+		- www.webmonkey.com			(Akamai; 503)
+
+-->
+<ruleset name="Conde Nast.com (partial)">
+
+	<target host="condenast.com" />
+	<target host="www.condenast.com" />
+	<target host="fonts.condenast.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+
+</ruleset>

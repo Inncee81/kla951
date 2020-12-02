@@ -1,0 +1,10 @@
+<!--
+	Timeout:
+		- imshopping.com
+		- www.imshopping.com
+-->
+<ruleset name="IMshopping.com (partial)">
+	<target host="euwidget.imshopping.com" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>
