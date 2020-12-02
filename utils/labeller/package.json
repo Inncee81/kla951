@@ -1,0 +1,20 @@
+{
+  "name": "https-everywhere-labeller",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "William Budington",
+  "contributors": ["Alexis Hancock"],
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@octokit/rest": "^17.1.4",
+    "progress": "^2.0.3",
+    "axios": "^0.19.2",
+    "unzipper": "0.10.10",
+    "mocha": "8.0.1",
+    "chai": "4.2.0"
+  }
+}

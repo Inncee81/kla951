@@ -1,0 +1,19 @@
+<!--
+	For other DW.com rulesets, see DW.com.xml
+-->
+<ruleset name="DW.de (partial)">
+
+	<target host="dw.de" />
+	<target host="www.dw.de" />
+	<target host="social.dw.de" />
+
+	<securecookie host=".+" name=".+" />
+
+	<!-- Invalid certificate on https://(www.)?dw.de/,
+		http://(www.)?dw.de/ redirect to https://www.dw.com/.-->
+	<rule from="^http://(www\.)?dw\.de/"
+			to="https://www.dw.com/" />
+
+	<rule from="^http:" to="https:" />
+
+</ruleset>

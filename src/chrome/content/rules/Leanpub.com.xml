@@ -1,0 +1,14 @@
+<!--
+	Non-functional hosts
+		SSL peer certificate was not OK:
+		- blog.leanpub.com
+		- samples.leanpub.com
+-->
+<ruleset name="Leanpub.com (partial)">
+	<target host="leanpub.com" />
+	<target host="www.leanpub.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

@@ -1,0 +1,23 @@
+<!--
+	Other Oversee.net rulesets:
+		+ Cdncomputer.com.xml
+		+ DomainSponsor.xml
+		+ ShopWiki.com.xml
+		+ Webfest_Global.xml
+
+
+	Non-functional hosts
+		Couldn't connect to server:
+		- domainfest.com
+		- www.domainfest.com
+
+		SSL peer certificate was not OK:
+		- oversee.net
+		- www.oversee.net
+-->
+<ruleset name="Oversee.net (partial)">
+	<target host="aboutairportparking.com" />
+	<target host="www.aboutairportparking.com" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

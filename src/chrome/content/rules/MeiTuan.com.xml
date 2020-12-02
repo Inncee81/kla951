@@ -1,0 +1,35 @@
+<!--
+	Related:
+		MeiTuan.net.xml
+
+	Cities:
+		There are more and more cities: https://www.meituan.com/changecity/
+		While this ruleset be created on 28 May 2016, there were 886 cities.
+		On 20 Feb 2017, the number is 964.
+		On 13 June 2020, the number is more than 1k.
+		We get error from travis: “The job exceeded the maximum time limit for jobs, and has been terminated.”
+		To fix this issue, maybe exclusion is the best choise.
+		Maybe we need strict regex ^http://(\w+)\.meituan\.com/ to avoid redirects on 4th level subdomains (*.*.meituan.com)
+
+	Invalid cert:
+		api.mobile.meituan.com
+-->
+<ruleset name="MeiTuan.com">
+	<target host="meituan.com"/>
+	<target host="*.meituan.com"/>
+
+	<exclusion pattern="^http://api\.mobile\.meituan\.com/" />
+		<test url="http://api.mobile.meituan.com/" />
+
+	<rule from="^http:" to="https:" />
+		<test url="http://bj.meituan.com/" />
+		<test url="http://sh.meituan.com/" />
+		<test url="http://gz.meituan.com/" />
+		<test url="http://sz.meituan.com/" />
+
+		<test url="http://i.meituan.com/mobile/down/meituan" />
+		<test url="http://s1.meituan.com/bs/js/?f=mta-js:mta.min.js" />
+		<test url="http://tech.meituan.com/" />
+		<test url="http://union.meituan.com/" />
+		<test url="http://kaidian.waimai.meituan.com/open_store/pclogin" />
+</ruleset>

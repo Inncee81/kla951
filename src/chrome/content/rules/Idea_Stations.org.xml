@@ -1,0 +1,6 @@
+<ruleset name="Idea Stations.org (partial)">
+	<target host="ideastations.org" />
+	<target host="www.ideastations.org" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

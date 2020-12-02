@@ -1,0 +1,15 @@
+<!--	Bucket at noipcdn.s3.amazonaws.com / d357s8oeboisp8.cloudfront.net
+-->
+<ruleset name="Vitalwerks (partial)">
+
+	<target host="no-ip.com"/>
+	<target host="*.no-ip.com"/>
+
+	<test url="http://blog.no-ip.com/" />
+	<test url="http://cdn.no-ip.com/" />
+	<test url="http://www.no-ip.com/" />
+
+	<rule from="^http:"
+		to="https:"/>
+
+</ruleset>
