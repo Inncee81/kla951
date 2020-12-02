@@ -1,0 +1,9 @@
+<ruleset name="Kuruc.info">
+	<target host="kuruc.info" />
+	<target host="kuruc.org" />
+
+	<rule from="^http://kuruc\.org/" to="https://kuruc.info/" />
+
+	<rule from="^http:"
+		to="https:" />
+</ruleset>

@@ -1,0 +1,13 @@
+<ruleset name="Newsela.com">
+	<target host="newsela.com" />
+	<target host="www.newsela.com" />
+	<target host="blog.newsela.com" />
+	<target host="e.newsela.com" />
+	<target host="static.newsela.com" />
+		<test url="http://static.newsela.com/teachers/Newsela%E2%80%99s%20Summer%20Reading%20Challenge.pdf" />
+	<target host="support.newsela.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

@@ -1,0 +1,18 @@
+<!--
+
+	Nonfunctional subdomains:
+
+		static.e-junkie.com		timeout
+
+-->
+<ruleset name="E-junkie (partial)">
+
+	<target host="e-junkie.com" />
+	<target host="www.e-junkie.com" />
+	<target host="ejunkie.com" />
+	<target host="www.ejunkie.com" />
+
+	<rule from="^http:"
+		to="https:" />
+
+</ruleset>

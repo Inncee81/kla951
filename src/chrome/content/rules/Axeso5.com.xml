@@ -1,0 +1,40 @@
+<!--
+	Non-functional hosts
+		Couldn't connect to server:
+		- tkts.axeso5.com
+
+		Incomplete certificate chain error:
+		- cdn.axeso5.com
+		- imagenes.axeso5.com
+
+		4xx client error:
+		- mbws.axeso5.com
+		- res.axeso5.com
+
+		5xx server error:
+		- oauth2.axeso5.com
+
+		Mixed content blocking (MCB) triggered:
+		- audition.axeso5.com
+		- foro.axeso5.com
+		- runescape.axeso5.com
+-->
+<ruleset name="Axeso5.com (partial)">
+	<target host="axeso5.com" />
+	<target host="www.axeso5.com" />
+	<target host="aceonline.axeso5.com" />
+	<target host="axesofest.axeso5.com" />
+	<target host="billing.axeso5.com" />
+	<target host="brickforce.axeso5.com" />
+	<target host="dirtybomb.axeso5.com" />
+	<target host="karos-rosh.axeso5.com" />
+	<target host="minimundos.axeso5.com" />
+	<target host="operation7.axeso5.com" />
+	<target host="suddenattack.axeso5.com" />
+	<target host="wia.axeso5.com" />
+	<target host="zmr.axeso5.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>

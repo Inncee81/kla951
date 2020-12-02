@@ -1,0 +1,18 @@
+<!--
+	Other NewspaperDirect.com related rulesets:
+		+ PressDisplay.com.xml
+
+	Non-functional hosts:
+		SSL connect error:
+		- newspaperdirect.com
+		- www.newspaperdirect.com
+-->
+<ruleset name="NewspaperDirect (partial)">
+
+	<target host="account.newspaperdirect.com" />
+
+	<securecookie host=".+" name=".+" />
+
+	<rule from="^http:" to="https:" />
+
+</ruleset>
